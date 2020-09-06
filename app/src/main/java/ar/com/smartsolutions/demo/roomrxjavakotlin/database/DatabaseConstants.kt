@@ -6,5 +6,6 @@ import androidx.room.OnConflictStrategy
 const val TABLE_NAME_CUSTOMER = "customer"
 
 /*DATABASE CONFIG*/
+const val DATABASE_NAME = "CustomerLogs"
 const val DATABASE_VERSION = 1
 const val ON_CONFLICT_STRATEGY = OnConflictStrategy.REPLACE
