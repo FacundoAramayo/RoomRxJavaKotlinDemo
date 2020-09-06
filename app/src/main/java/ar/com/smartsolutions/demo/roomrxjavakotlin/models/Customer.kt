@@ -20,7 +20,7 @@ class Customer(
     var name: String? = null,
 
     @ColumnInfo(name = BIRTHDAY)
-    var birthday: Date? = null,
+    var birthday: Long? = null,
 
     @ColumnInfo(name = ADDRESS)
     var address: String? = null,

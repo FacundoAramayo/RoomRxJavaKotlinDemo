@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">RoomRxJavaKotlinDemo</string>
+
+    <string name="last_name">Apellido</string>
+    <string name="first_name">Nombre</string>
+    <string name="birthday">Fecha de nacimiento</string>
+    <string name="address">Dirección</string>
+    <string name="email">Email</string>
+    <string name="phone">Teléfono</string>
+    <string name="commment">Comentario</string>
+
+    <string name="add_customer">Agregar cliente</string>
+    <string name="see_customer_list">Ver listado de clientes</string>
+
+    <string name="save">Guardar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
 </resources>
