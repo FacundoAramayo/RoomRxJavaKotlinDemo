@@ -83,7 +83,6 @@ class AddCustomerActivity : AppCompatActivity() {
                     || address.isEmpty()
                     || email.isEmpty()
                     || phone.isEmpty()
-                    || comment.isEmpty()
                     )
         }
     }

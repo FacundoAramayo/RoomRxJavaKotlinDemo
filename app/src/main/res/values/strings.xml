@@ -11,6 +11,7 @@
 
     <string name="add_customer">Agregar cliente</string>
     <string name="see_customer_list">Ver listado de clientes</string>
+    <string name="no_customers">No hay clientes registrados</string>
 
     <string name="save">Guardar</string>
     <string name="edit">Editar</string>

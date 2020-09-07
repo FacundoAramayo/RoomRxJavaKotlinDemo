@@ -12,8 +12,6 @@
         android:layout_height="match_parent"
         android:id="@+id/scrollFeed"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.appsnipp.formdesigns.MainActivity"
-        tools:showIn="@layout/activity_main"
         android:focusableInTouchMode="true">
 
         <androidx.cardview.widget.CardView

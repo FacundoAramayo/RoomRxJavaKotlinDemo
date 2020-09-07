@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_standard"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/margin_standard"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/margin_standard"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/margin_standard"/>
+
+    <TextView
+        android:id="@+id/tv_initials"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/start_margin"
+        app:layout_constraintTop_toTopOf="@id/top_margin"
+        app:layout_constraintBottom_toBottomOf="@id/tv_phone"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_title"
+        android:background="@drawable/circle_gray"
+        tools:text="FA"/>
+
+    <TextView
+        android:id="@+id/tv_contactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintStart_toEndOf="@id/tv_initials"
+        app:layout_constraintEnd_toEndOf="@id/middle_separator"
+        app:layout_constraintTop_toTopOf="@id/top_margin"
+        style="@style/TextStyleTitle"
+        tools:text="Eugenio, Suárez"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintStart_toEndOf="@id/tv_initials"
+        app:layout_constraintEnd_toEndOf="@id/middle_separator"
+        app:layout_constraintTop_toBottomOf="@id/tv_contactName"
+        style="@style/TextStyleCaption"
+        tools:text="Dirección"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintStart_toEndOf="@id/tv_initials"
+        app:layout_constraintEnd_toEndOf="@id/middle_separator"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        style="@style/TextStyleCaption"
+        tools:text="contacto@gmail.com"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintStart_toEndOf="@id/tv_initials"
+        app:layout_constraintEnd_toEndOf="@id/middle_separator"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"
+        app:layout_constraintBottom_toTopOf="@id/tv_comments"
+        style="@style/TextStyleCaption"
+        tools:text="+54 9 3873 636363"/>
+
+    <TextView
+        android:id="@+id/tv_comments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintStart_toEndOf="@id/tv_initials"
+        app:layout_constraintEnd_toEndOf="@id/end_margin"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_margin"
+        style="@style/TextStyleCaption"
+        tools:visibility="gone"
+        tools:text="Comentarios:"/>
+
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/container_rounded_colored"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintStart_toStartOf="@id/middle_separator"
+        app:layout_constraintTop_toTopOf="@id/top_margin"
+        app:layout_constraintBottom_toBottomOf="@id/tv_phone"
+        app:layout_constraintEnd_toStartOf="@id/btn_delete"/>
+
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/container_rounded_colored"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@id/btn_edit"
+        app:layout_constraintTop_toTopOf="@id/top_margin"
+        app:layout_constraintBottom_toBottomOf="@id/tv_phone"
+        app:layout_constraintEnd_toEndOf="@id/end_margin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

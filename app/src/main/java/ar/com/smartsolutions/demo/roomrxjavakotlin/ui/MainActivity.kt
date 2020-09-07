@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this@MainActivity, AddCustomerActivity::class.java)
                 startActivity(intent)
             }
+            btnOpenCustomerList.setOnClickListener {
+                val intent = Intent(this@MainActivity, CustomerListActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

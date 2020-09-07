@@ -4,5 +4,10 @@
     <dimen name="form_app_bar_height">250dp</dimen>
 
     <dimen name="custom_radius">5dp</dimen>
-    <dimen name="margin_standard">20dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+
+    <dimen name="text_title">16sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
 </resources>

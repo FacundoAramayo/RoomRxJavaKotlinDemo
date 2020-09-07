@@ -29,7 +29,7 @@
 
     <style name="modifiedEditText" parent="parent">
         <item name="android:textSize">@dimen/newsMoreTextSize</item>
-        <item name="android:backgroundTint">@color/primaryTextColor</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
     </style>
 
 
@@ -42,6 +42,21 @@
         <item name="android:layout_marginLeft">5dp</item>
         <item name="android:layout_marginRight">5dp</item>
         <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="TextStyleTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textSize">@dimen/text_title</item>
+    </style>
+
+    <style name="TextStyleBody" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="TextStyleCaption" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textSize">@dimen/text_caption</item>
     </style>
 
 </resources>
