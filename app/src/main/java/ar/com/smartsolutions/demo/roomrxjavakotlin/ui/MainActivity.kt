@@ -3,6 +3,7 @@ package ar.com.smartsolutions.demo.roomrxjavakotlin.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ar.com.smartsolutions.demo.roomrxjavakotlin.R
 import ar.com.smartsolutions.demo.roomrxjavakotlin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        supportActionBar?.setTitle(R.string.customer_app)
         binding.apply {
             btnAddCustomer.setOnClickListener {
                 val intent = Intent(this@MainActivity, AddCustomerActivity::class.java)

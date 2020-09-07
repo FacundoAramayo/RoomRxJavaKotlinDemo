@@ -9,8 +9,9 @@
     <string name="phone">Teléfono</string>
     <string name="commment">Comentario</string>
 
+    <string name="customer_app">Clientes</string>
     <string name="add_customer">Agregar cliente</string>
-    <string name="see_customer_list">Ver listado de clientes</string>
+    <string name="see_customer_list">Listado de clientes</string>
     <string name="no_customers">No hay clientes registrados</string>
 
     <string name="save">Guardar</string>

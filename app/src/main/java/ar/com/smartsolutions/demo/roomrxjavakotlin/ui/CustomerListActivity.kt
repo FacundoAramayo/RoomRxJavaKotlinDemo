@@ -7,6 +7,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import ar.com.smartsolutions.demo.roomrxjavakotlin.R
 import ar.com.smartsolutions.demo.roomrxjavakotlin.database.ApplicationDatabase
 import ar.com.smartsolutions.demo.roomrxjavakotlin.databinding.ActivityCustomerListBinding
 import ar.com.smartsolutions.demo.roomrxjavakotlin.models.Customer
@@ -41,6 +42,8 @@ CustomerItemView.EditClickListener{
     }
 
     private fun setupView() {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setTitle(R.string.see_customer_list)
         binding.recyclerCustomerList.apply {
             layoutManager = LinearLayoutManager(this@CustomerListActivity, RecyclerView.VERTICAL, false)
             adapter = customerListAdapter
@@ -72,6 +75,11 @@ CustomerItemView.EditClickListener{
             cardContainer.visibility = View.GONE
             tvNoCustomers.visibility = View.VISIBLE
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     override fun onDeleteClick(customer: Customer) {

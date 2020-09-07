@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import ar.com.smartsolutions.demo.roomrxjavakotlin.R
 import ar.com.smartsolutions.demo.roomrxjavakotlin.database.ApplicationDatabase
 import ar.com.smartsolutions.demo.roomrxjavakotlin.databinding.ActivityAddCustomerBinding
 import ar.com.smartsolutions.demo.roomrxjavakotlin.models.Customer
@@ -37,6 +38,8 @@ class AddCustomerActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setTitle(R.string.add_customer)
         binding.run {
             btnSave.setOnClickListener {
                 saveCustomer()
@@ -85,6 +88,11 @@ class AddCustomerActivity : AppCompatActivity() {
                     || phone.isEmpty()
                     )
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     private fun closeActivity() {
