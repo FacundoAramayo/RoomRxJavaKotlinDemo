@@ -29,7 +29,10 @@ class Customer(
     var email: String? = null,
 
     @ColumnInfo(name = PHONE)
-    var phone: String? = null
+    var phone: String? = null,
+
+    @ColumnInfo(name = COMMENT)
+    var comment: String? = null
 )  {
     companion object {
         const val TABLE_NAME = TABLE_NAME_CUSTOMER
@@ -40,5 +43,6 @@ class Customer(
         const val ADDRESS = "address"
         const val EMAIL = "email"
         const val PHONE = "phone"
+        const val COMMENT = "comment"
     }
 }
